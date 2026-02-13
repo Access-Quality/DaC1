@@ -16,8 +16,8 @@ jobs:
 
       - name: Build Documentation
         run: |
-          mkdir build
-          asciidoctor -R -D build src/docs/manuals/*.adoc
+          mkdir -p build
+          asciidoctor -D build prueba1-publish/docs/*.adoc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
