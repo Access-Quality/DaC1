@@ -1,0 +1,25 @@
+name: Publish Manuals
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+        -name: Install Asciidoctor
+        run: |
+          mkdir build
+          asciidoctor -R -D build **/Ing_Junior_Access_Quality.adoc
+
+        -name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          
+        
