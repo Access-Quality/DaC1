@@ -1,0 +1,444 @@
+/* ===== ACCESS QUALITY CUSTOM THEME ===== */
+
+/* Importar fuentes modernas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Variables CSS para fácil personalización */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --bg-color: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --border-color: #e5e7eb;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+}
+
+/* Reset y base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background: var(--bg-secondary);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Header con branding de empresa */
+#header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 2rem 3rem;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#header::before {
+  content: "ACCESS QUALITY";
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+#header .details {
+  margin-top: 0.75rem;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* Contenedor principal con sidebar */
+#content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--bg-color);
+  min-height: calc(100vh - 120px);
+}
+
+/* Sidebar para TOC */
+#toc {
+  position: sticky;
+  top: 140px;
+  height: fit-content;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+#toc #toctitle {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#toc li {
+  margin: 0.5rem 0;
+}
+
+#toc a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+#toc a:hover {
+  background: white;
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+#toc .sectlevel2 {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Contenido principal */
+.sect1 {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary-color);
+}
+
+.sect1 > h2 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--bg-tertiary);
+}
+
+.sect2 > h3 {
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Párrafos y texto */
+.paragraph {
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Listas estilizadas */
+.ulist ul, .olist ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.ulist li, .olist li {
+  margin: 0.75rem 0;
+  padding-left: 0.5rem;
+}
+
+.ulist li::marker {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.ulist li > p {
+  margin: 0.25rem 0;
+}
+
+/* Tablas elegantes */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+table thead {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+}
+
+table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr {
+  transition: background 0.2s;
+}
+
+table tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Bloques estilizados (NOTE, TIP, WARNING, etc.) */
+.admonitionblock {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow);
+}
+
+.admonitionblock.note {
+  border-left-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.admonitionblock.tip {
+  border-left-color: #10b981;
+  background: #f0fdf4;
+}
+
+.admonitionblock.warning {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.admonitionblock.caution, .admonitionblock.important {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+
+.admonitionblock td.icon {
+  width: 60px;
+  padding-right: 1rem;
+}
+
+.admonitionblock td.icon .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.admonitionblock.note td.icon .title {
+  color: #3b82f6;
+}
+
+.admonitionblock.tip td.icon .title {
+  color: #10b981;
+}
+
+.admonitionblock.warning td.icon .title {
+  color: #f59e0b;
+}
+
+.admonitionblock.caution td.icon .title,
+.admonitionblock.important td.icon .title {
+  color: #ef4444;
+}
+
+.admonitionblock td.content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Bloques de código */
+.listingblock, .literalblock {
+  margin: 1.5rem 0;
+}
+
+.listingblock .content, .literalblock .content {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  box-shadow: var(--shadow);
+}
+
+.listingblock pre, .literalblock pre {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Código inline */
+code {
+  background: var(--bg-tertiary);
+  color: var(--primary-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+}
+
+/* Separadores */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+  margin: 2rem 0;
+}
+
+/* Enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+}
+
+#footer-text {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  #content {
+    grid-template-columns: 1fr;
+  }
+  
+  #toc {
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+  
+  #header {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .sect1 {
+    padding: 1.5rem;
+  }
+  
+  .sect1 > h2 {
+    font-size: 1.5rem;
+  }
+  
+  #content {
+    padding: 1rem;
+  }
+}
+
+/* Animaciones sutiles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sect1 {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+  }
+  
+  #header {
+    background: var(--primary-color);
+    position: relative;
+  }
+  
+  #toc {
+    border: 1px solid var(--border-color);
+  }
+  
+  .sect1 {
+    page-break-inside: avoid;
+    box-shadow: none;
+  }
+}
