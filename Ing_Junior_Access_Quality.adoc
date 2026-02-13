@@ -1,0 +1,53 @@
+= Ingeniero Junior en Telecomunicaciones
+:toc:
+:toc-title: Contenido
+
+== Información General
+
+*Título del puesto:* Ingeniero Junior en Telecomunicaciones
+
+*Ubicación:* [Ciudad/Región]
+
+*Tipo de puesto:* Tiempo completo
+
+== Descripción del puesto
+
+Buscamos un Ingeniero Junior en Telecomunicaciones altamente motivado para unirse a nuestro equipo dinámico. Este rol es ideal para un profesional que busca desarrollar sus habilidades técnicas en un entorno de rápido crecimiento, trabajando en proyectos desafiantes y colaborando con ingenieros experimentados.
+
+== Responsabilidades
+
+* Colaborar con ingenieros senior en el diseño, implementación y mantenimiento de redes de telecomunicaciones.
+* Configurar e instalar diversos servicios y dispositivos de red, incluyendo routers, switches, firewalls y otros equipos relacionados.
+* Realizar el mantenimiento de la red y actualizaciones de sistemas, asegurando la continuidad y eficiencia operativa.
+* Supervisar el rendimiento de la red para garantizar su fiabilidad y disponibilidad.
+* Proporcionar soporte técnico y resolver problemas relacionados con la infraestructura de telecomunicaciones.
+* Documentar procedimientos técnicos y mantener registros precisos de configuraciones y cambios en la red.
+* Participar en ventanas de mantenimiento programadas y estar disponible para guardias según sea necesario.
+
+== Requisitos
+
+* Título universitario en Ingeniería en Telecomunicaciones, Ciberseguridad o campo relacionado.
+* Hasta 2 años de experiencia en roles relacionados con telecomunicaciones o redes.
+* Conocimientos sólidos en redes y comunicaciones de datos (datacomm).
+* Dominio del inglés en un 80%, tanto escrito como hablado.
+* Disponibilidad para trabajar en nuestras oficinas o en las de nuestros clientes, ubicadas principalmente en la Ciudad de México (CDMX).
+* Disposición para realizar ventanas de mantenimiento y cubrir guardias durante días festivos y fines de semana.
+* Excelentes habilidades de comunicación y capacidad para trabajar en equipo.
+* Capacidad para adaptarse a entornos dinámicos y manejar múltiples tareas simultáneamente.
+
+== Habilidades deseables
+
+* Experiencia con protocolos de red y herramientas de diagnóstico.
+* Certificaciones relevantes en redes o telecomunicaciones.
+* Conocimiento de sistemas operativos y software relacionados con telecomunicaciones.
+
+== Aplicar
+
+Si cumples con los requisitos y estás interesado en formar parte de un equipo dinámico, envía tu CV y carta de presentación.
+
+'''
+
+[NOTE]
+====
+_Esta descripción del puesto está sujeta a cambios según las necesidades de la organización._
+====
