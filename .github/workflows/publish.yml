@@ -20,6 +20,7 @@ jobs:
         run: |
           mkdir -p build
           asciidoctor -D build prueba1-publish/docs/*.adoc
+          cp prueba1-publish/docs/*.css build/ 2>/dev/null || true
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=Ing_Junior_Access_Quality.html"></head><body><p>Redirecting to <a href="Ing_Junior_Access_Quality.html">Ing_Junior_Access_Quality.html</a></p></body></html>' > build/index.html
 
       - name: Deploy to GitHub Pages
