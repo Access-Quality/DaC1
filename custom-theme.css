@@ -1,9 +1,7 @@
-/* ===== ACCESS QUALITY CUSTOM THEME ===== */
-
-/* Importar fuentes modernas */
+/* Importar fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* Variables CSS para fácil personalización */
+/* Variables personalización */
 :root {
   --primary-color: #2563eb;
   --secondary-color: #1e40af;
@@ -34,15 +32,12 @@ body {
   font-size: 16px;
 }
 
-/* Header con branding de empresa */
+/* Header */
 #header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: white;
   padding: 2rem 3rem;
   box-shadow: var(--shadow-lg);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 #header::before {
@@ -79,13 +74,13 @@ body {
   margin: 0 auto;
   padding: 2rem;
   background: var(--bg-color);
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
 }
 
 /* Sidebar para TOC */
 #toc {
   position: sticky;
-  top: 140px;
+  top: 20px;
   height: fit-content;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
