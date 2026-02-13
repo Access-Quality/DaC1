@@ -1,6 +1,16 @@
-= Ingeniero Junior en Telecomunicaciones
-:toc:
+= Director en Telecomunicaciones
+:doctype: article
+:encoding: utf-8
+:lang: es
+:toc: left
 :toc-title: Contenido
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 2
+:icons: font
+:source-highlighter: highlight.js
+:stylesheet: custom-theme.css
+:linkcss:
 
 == Información General
 
