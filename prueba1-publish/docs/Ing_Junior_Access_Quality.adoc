@@ -1,4 +1,4 @@
-= Director en Telecomunicaciones
+= Ingeniero en Telecomunicaciones
 :doctype: article
 :encoding: utf-8
 :lang: es
